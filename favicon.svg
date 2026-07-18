@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#f6f2ea"/>
+  <!-- Atwell pyramid -->
+  <path d="M14 36 L32 10 L50 36" fill="none" stroke="#16111a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- snow cap -->
+  <path d="M26 19 L32 10 L38 19 L34 22 L30 22 Z" fill="#f5f2f8" stroke="#16111a" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- heather roll -->
+  <path d="M8 46 C18 40 30 44 40 41 C48 39 54 42 58 40" fill="none" stroke="#6d4f80" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- the two lakes -->
+  <ellipse cx="25" cy="51" rx="8" ry="3.2" fill="none" stroke="#6d4f80" stroke-width="2.2"/>
+  <ellipse cx="43" cy="54" rx="5.5" ry="2.6" fill="none" stroke="#6d4f80" stroke-width="2.2"/>
+</svg>

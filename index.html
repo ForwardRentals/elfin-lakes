@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Elfin Lakes — A Field Guide to the Diamond Head Trail, Garibaldi Park, BC</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An honest field guide to Elfin Lakes in the Diamond Head corner of Garibaldi Provincial Park above Squamish — the road grade via Red Heather, the reservation-only hut, which lake you can swim in, the winter ski tour, and what the brochures leave out.">
+<link rel="canonical" href="https://elfin-lake.com/">
+<meta property="og:title" content="Elfin Lakes — A Field Guide to the Diamond Head Trail, Garibaldi Park, BC">
+<meta property="og:description" content="Two small lakes on a heather ridge facing Atwell Peak. The classic Squamish hut hike, summer and winter — told straight.">
+<meta property="og:url" content="https://elfin-lake.com/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f2ea;          /* warm cream */
+    --paper-deep: #eee8dc;
+    --paper-lilac: #efeaf1;    /* faint heather wash */
+    --ink: #1c1917;
+    --ink-soft: #37322b;
+    --mute: #7c7469;
+    --rule: #e1dacc;
+    --rule-strong: #c9c1b1;
+    --heather: #6d4f80;        /* heather purple */
+    --heather-deep: #503a61;
+    --heather-soft: #a58cb4;
+    --volcanic: #16111a;       /* volcanic black w/ purple cast */
+    --volcanic-2: #241c2b;
+    --snow: #f5f2f8;
+    --snow-blue: #dfe3ef;
+    --glow: #c98a97;           /* alpenglow rose */
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--heather); color: var(--snow); }
+
+  a { color: inherit; text-decoration: none; }
+  .ln { border-bottom: 1px solid var(--rule-strong); transition: border-color .2s, color .2s; }
+  .ln:hover { border-bottom-color: var(--heather); color: var(--heather-deep); }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", "Times New Roman", serif;
+    font-weight: 400; line-height: 1.06; letter-spacing: -0.02em;
+    margin: 0; color: var(--ink);
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+  h1 { font-size: clamp(2.9rem, 7vw, 5.4rem); letter-spacing: -0.028em; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
+  h3 { font-size: 1.25rem; font-weight: 500; line-height: 1.3; }
+  p { margin: 0 0 1.05rem; color: var(--ink-soft); font-size: 1.04rem; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+  .narrow { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 1rem;
+    font-size: .7rem; letter-spacing: .26em; text-transform: uppercase;
+    font-weight: 600; color: var(--heather-deep);
+    margin-bottom: 1rem;
+  }
+  .eyebrow::after { content: ""; flex: 1; height: 1px; background: var(--rule); max-width: 120px; }
+
+  /* ---------- NAV ---------- */
+  nav.top {
+    position: sticky; top: 0; z-index: 60;
+    background: rgba(246,242,234,.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav.top .inner {
+    max-width: 1120px; margin: 0 auto;
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: .85rem 1.5rem;
+  }
+  .wordmark { font-family: "Fraunces", serif; font-size: 1.08rem; font-weight: 500; letter-spacing: -0.01em; }
+  .wordmark em { font-style: italic; color: var(--heather-deep); }
+  .wordmark small {
+    display: block; font-family: "Inter", sans-serif; font-weight: 500;
+    font-size: .58rem; letter-spacing: .24em; text-transform: uppercase;
+    color: var(--mute); margin-top: .18rem;
+  }
+  nav.top .links { display: flex; gap: 1.6rem; }
+  nav.top .links a {
+    font-size: .72rem; letter-spacing: .16em; text-transform: uppercase;
+    font-weight: 600; color: var(--ink-soft);
+  }
+  nav.top .links a:hover { color: var(--heather-deep); }
+  @media (max-width: 800px) { nav.top .links { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero { border-bottom: 1px solid var(--rule); background: var(--volcanic); }
+  .hero svg { display: block; width: 100%; height: auto; }
+
+  /* ---------- MASTHEAD ---------- */
+  header.mast { padding: 4.5rem 0 3rem; }
+  .mast .kicker {
+    font-size: .72rem; letter-spacing: .3em; text-transform: uppercase;
+    font-weight: 600; color: var(--heather-deep); margin-bottom: 1.4rem;
+    display: flex; align-items: center; gap: 1.1rem;
+  }
+  .mast .kicker::before, .mast .kicker::after { content: ""; height: 1px; background: var(--rule-strong); flex: 0 0 46px; }
+  .mast h1 { text-align: center; }
+  .mast .deck {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 300;
+    font-size: clamp(1.15rem, 2.2vw, 1.5rem); line-height: 1.5;
+    color: var(--ink-soft); text-align: center;
+    max-width: 46ch; margin: 1.5rem auto 0;
+    font-variation-settings: "opsz" 40, "SOFT" 30;
+  }
+  .mast { text-align: center; }
+  .mast .kicker { justify-content: center; }
+
+  /* ---------- COORDINATE RIBBON (dark volcanic strip) ---------- */
+  .ribbon {
+    background: var(--volcanic); color: var(--snow);
+    border-top: 1px solid var(--volcanic-2);
+  }
+  .ribbon .inner {
+    max-width: 1120px; margin: 0 auto; padding: 1.05rem 1.5rem;
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: .6rem 2.6rem;
+  }
+  .ribbon .cell { display: flex; align-items: baseline; gap: .6rem; }
+  .ribbon .k { font-size: .6rem; letter-spacing: .24em; text-transform: uppercase; font-weight: 600; color: var(--heather-soft); }
+  .ribbon .v { font-family: "Fraunces", serif; font-size: 1rem; font-weight: 400; color: var(--snow); letter-spacing: .01em; }
+
+  /* ---------- ESSAY ---------- */
+  section.essay { padding: 6rem 0 4.5rem; }
+  .essay p { font-size: 1.1rem; line-height: 1.78; }
+  .essay p.opener::first-letter {
+    font-family: "Fraunces", serif;
+    font-size: 4.6rem; line-height: .78;
+    float: left; padding: .45rem .8rem 0 0;
+    color: var(--heather-deep); font-weight: 400;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+  }
+  .pull {
+    margin: 3.2rem 0; padding: 2.2rem 0;
+    border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule-strong);
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 300;
+    font-size: clamp(1.35rem, 2.6vw, 1.8rem); line-height: 1.45;
+    color: var(--ink); text-align: center;
+    font-variation-settings: "opsz" 60, "SOFT" 30;
+  }
+  .pull .who { display: block; margin-top: 1rem; font-family: "Inter", sans-serif; font-style: normal; font-size: .68rem; letter-spacing: .24em; text-transform: uppercase; color: var(--mute); font-weight: 600; }
+
+  /* ---------- QUICK TAKE (asymmetric: numerals left, notes right) ---------- */
+  section.quick { padding: 5.5rem 0; background: var(--paper-lilac); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .quick-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 3.5rem; align-items: start; }
+  @media (max-width: 860px) { .quick-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+  .figures { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--rule-strong); background: var(--paper); }
+  .figures > div { padding: 1.4rem 1.3rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .figures > div:nth-child(2n) { border-right: none; }
+  .figures > div:nth-last-child(-n+2) { border-bottom: none; }
+  .figures .num { font-family: "Fraunces", serif; font-size: 2rem; letter-spacing: -0.02em; color: var(--heather-deep); line-height: 1.05; }
+  .figures .lbl { font-size: .66rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--mute); margin-top: .45rem; }
+  .quick-notes li {
+    list-style: none; padding: .9rem 0; border-top: 1px solid var(--rule);
+    display: grid; grid-template-columns: 2.2rem 1fr; gap: .8rem; align-items: baseline;
+    font-size: .99rem; color: var(--ink-soft);
+  }
+  .quick-notes { margin: 0; padding: 0; }
+  .quick-notes li:first-child { border-top: none; padding-top: 0; }
+  .quick-notes .n { font-family: "Fraunces", serif; font-style: italic; color: var(--heather); font-size: .95rem; }
+  .quick-notes b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- APPROACH / HUT (alternating asymmetric) ---------- */
+  section.block { padding: 5.5rem 0; }
+  .split { display: grid; grid-template-columns: .85fr 1.5fr; gap: 3.5rem; align-items: start; }
+  .split.rev { grid-template-columns: 1.5fr .85fr; }
+  @media (max-width: 860px) { .split, .split.rev { grid-template-columns: 1fr; gap: 1.8rem; } }
+  .split .side h2 { max-width: 14ch; }
+  .side-note {
+    margin-top: 1.6rem; padding: 1.2rem 1.3rem;
+    background: var(--paper-deep); border-left: 2px solid var(--heather);
+    font-size: .92rem; color: var(--ink-soft);
+  }
+  .side-note strong { display: block; font-size: .64rem; letter-spacing: .22em; text-transform: uppercase; color: var(--heather-deep); margin-bottom: .4rem; font-weight: 600; }
+
+  /* ---------- LAKE RULE SIGN ---------- */
+  .lakesign {
+    margin: 0 auto; max-width: 720px;
+    border: 1.5px solid var(--ink); background: var(--paper);
+    padding: 2.2rem 2rem 2rem; text-align: center; position: relative;
+  }
+  .lakesign::before {
+    content: ""; position: absolute; inset: 7px;
+    border: 1px solid var(--rule-strong); pointer-events: none;
+  }
+  .lakesign h3 { font-size: 1.45rem; margin-bottom: 1.1rem; }
+  .lakesign .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 1.4rem; border-top: 1px solid var(--rule-strong); }
+  @media (max-width: 620px) { .lakesign .two { grid-template-columns: 1fr; } }
+  .lakesign .two > div { padding: 1.3rem 1.1rem .4rem; }
+  .lakesign .two > div:first-child { border-right: 1px solid var(--rule-strong); }
+  @media (max-width: 620px) { .lakesign .two > div:first-child { border-right: none; border-bottom: 1px solid var(--rule-strong); } }
+  .lakesign .tag { font-size: .64rem; letter-spacing: .24em; text-transform: uppercase; font-weight: 700; margin-bottom: .5rem; }
+  .lakesign .tag.drink { color: var(--heather-deep); }
+  .lakesign .tag.swim { color: var(--glow); }
+  .lakesign p { font-size: .95rem; }
+
+  /* ---------- TWO SEASONS SPLIT PANEL ---------- */
+  section.seasons2 { padding: 0; border-top: 1px solid var(--rule); }
+  .seasons2 .head { padding: 5.5rem 1.5rem 3rem; text-align: center; }
+  .seasons2 .head h2 { margin: 0 auto; }
+  .seasons2 .head .eyebrow { justify-content: center; }
+  .seasons2 .head .eyebrow::after { display: none; }
+  .panels { display: grid; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 860px) { .panels { grid-template-columns: 1fr; } }
+  .panel { padding: 4rem 3rem 4.5rem; }
+  @media (max-width: 620px) { .panel { padding: 3rem 1.5rem 3.5rem; } }
+  .panel .season-tag {
+    font-size: .66rem; letter-spacing: .28em; text-transform: uppercase; font-weight: 700;
+    display: inline-flex; align-items: center; gap: .7rem; margin-bottom: 1.6rem;
+  }
+  .panel h3 { font-size: clamp(1.5rem, 2.4vw, 1.9rem); margin-bottom: 1.2rem; }
+  .panel p { font-size: 1rem; }
+  .panel ul { margin: 1.4rem 0 0; padding: 0; }
+  .panel li { list-style: none; padding: .7rem 0; font-size: .93rem; display: grid; grid-template-columns: 1.4rem 1fr; gap: .6rem; align-items: baseline; }
+  .panel li::before { content: "—"; }
+  .panel.summer { background: linear-gradient(180deg, var(--paper-lilac), #e9e0ec); color: var(--ink-soft); }
+  .panel.summer .season-tag { color: var(--heather-deep); }
+  .panel.summer h3 { color: var(--ink); }
+  .panel.summer li { border-top: 1px solid rgba(109,79,128,.18); color: var(--ink-soft); }
+  .panel.summer li::before { color: var(--heather); }
+  .panel.winter { background: linear-gradient(180deg, var(--volcanic), var(--volcanic-2)); color: var(--snow-blue); }
+  .panel.winter .season-tag { color: var(--heather-soft); }
+  .panel.winter h3 { color: var(--snow); }
+  .panel.winter p { color: var(--snow-blue); }
+  .panel.winter li { border-top: 1px solid rgba(245,242,248,.14); color: var(--snow-blue); }
+  .panel.winter li::before { color: var(--heather-soft); }
+  .panel .mini { width: 74px; height: 46px; display: block; margin-bottom: 1.4rem; }
+  .avvy {
+    margin-top: 1.8rem; padding: 1.1rem 1.2rem;
+    border: 1px solid rgba(201,138,151,.5); background: rgba(201,138,151,.09);
+    font-size: .9rem; color: var(--snow);
+  }
+  .avvy strong { display: block; font-size: .64rem; letter-spacing: .22em; text-transform: uppercase; color: var(--glow); margin-bottom: .35rem; font-weight: 700; }
+
+  /* ---------- WHEN TO GO (editorial table) ---------- */
+  section.when { padding: 5.5rem 0; }
+  table.months { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+  table.months th {
+    text-align: left; font-size: .64rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--mute); font-weight: 600; padding: 0 1rem .7rem 0; border-bottom: 1px solid var(--rule-strong);
+  }
+  table.months td { padding: 1rem 1rem 1rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; font-size: .95rem; color: var(--ink-soft); }
+  table.months td.m { font-family: "Fraunces", serif; font-style: italic; white-space: nowrap; color: var(--ink); font-size: 1.05rem; }
+  table.months td.verdict { font-weight: 600; color: var(--heather-deep); white-space: nowrap; }
+  .table-scroll { overflow-x: auto; }
+  @media (max-width: 620px) { table.months { min-width: 540px; } }
+
+  /* ---------- HONEST NOTE ---------- */
+  section.honest { padding: 5.5rem 0; background: var(--paper-deep); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  section.honest p { font-size: 1.03rem; }
+  section.honest em { color: var(--ink); }
+
+  /* ---------- TRAILHEAD SUPPORT ---------- */
+  section.support { padding: 5.5rem 0; }
+  .support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 2.2rem; }
+  @media (max-width: 760px) { .support-grid { grid-template-columns: 1fr; } }
+  .support-card { border: 1px solid var(--rule-strong); background: var(--paper); padding: 1.8rem 1.6rem; display: flex; flex-direction: column; }
+  .support-card h3 { font-size: 1.25rem; margin-bottom: .6rem; }
+  .support-card p { font-size: .96rem; }
+  .support-card .cta {
+    margin-top: auto; align-self: flex-start;
+    display: inline-block; padding: .6rem 1.3rem;
+    border: 1px solid var(--heather-deep); border-radius: 999px;
+    font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 700;
+    color: var(--heather-deep); transition: all .2s;
+  }
+  .support-card .cta:hover { background: var(--heather-deep); color: var(--snow); }
+  .rest-day {
+    margin-top: 2.4rem; padding: 1.6rem 1.7rem;
+    border: 1px solid var(--rule-strong); border-left: 3px solid var(--heather);
+    background: var(--paper-lilac); font-size: .98rem; color: var(--ink-soft);
+  }
+  .rest-day strong { display: block; font-size: .64rem; letter-spacing: .24em; text-transform: uppercase; color: var(--heather-deep); margin-bottom: .5rem; font-weight: 700; }
+
+  /* ---------- FAQ ---------- */
+  section.faq { padding: 5.5rem 0 6rem; border-top: 1px solid var(--rule); }
+  .faq-list { margin-top: 2rem; border-top: 1px solid var(--rule-strong); }
+  details.qa { border-bottom: 1px solid var(--rule); }
+  details.qa > summary {
+    list-style: none; cursor: pointer; padding: 1.35rem 0;
+    display: grid; grid-template-columns: 1fr 1.6rem; gap: 1rem; align-items: baseline;
+    font-family: "Fraunces", serif; font-weight: 500; font-size: 1.2rem; line-height: 1.35;
+  }
+  details.qa > summary::-webkit-details-marker { display: none; }
+  details.qa > summary:hover { color: var(--heather-deep); }
+  .qa .tick { font-family: "Inter", sans-serif; font-weight: 300; font-size: 1.4rem; color: var(--mute); justify-self: end; transition: transform .2s; line-height: 1; }
+  details.qa[open] .tick { transform: rotate(45deg); }
+  .qa .ans { padding: 0 0 1.6rem; }
+  .qa .ans p { font-size: 1rem; }
+
+  /* ---------- FOOTER ---------- */
+  footer.colophon { background: var(--volcanic); color: var(--snow-blue); padding: 4rem 0 2.5rem; }
+  .colophon a { color: var(--snow-blue); }
+  .colophon a:hover { color: var(--snow); }
+  .col-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
+  @media (max-width: 720px) { .col-grid { grid-template-columns: 1fr; } }
+  .col-grid h4 { font-family: "Inter", sans-serif; font-size: .64rem; letter-spacing: .26em; text-transform: uppercase; color: var(--heather-soft); font-weight: 700; margin: 0 0 .9rem; }
+  .col-grid p { color: var(--snow-blue); font-size: .92rem; margin: 0; }
+  .col-grid ul { list-style: none; margin: 0; padding: 0; }
+  .col-grid li { margin-bottom: .45rem; font-size: .92rem; }
+  .col-bottom { border-top: 1px solid rgba(245,242,248,.14); padding-top: 1.4rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: .76rem; color: rgba(223,227,239,.75); }
+  .col-bottom em { font-family: "Fraunces", serif; }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="top">
+  <div class="inner">
+    <a href="https://seatoskytrails.com/" class="wordmark">
+      Elfin <em>Lakes</em>
+      <small>A Sea to Sky Trails field guide</small>
+    </a>
+    <div class="links">
+      <a href="#essay">The Walk In</a>
+      <a href="#hut">The Hut</a>
+      <a href="#seasons">Two Seasons</a>
+      <a href="#when">When to Go</a>
+      <a href="#faq">Questions</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO SCENE ===================== -->
+<div class="hero" aria-hidden="false">
+  <svg viewBox="0 0 1440 560" role="img" aria-label="Illustration of the Elfin Lakes: two small alpine lakes on a rolling heather ridge, with the dark pyramid of Atwell Peak and the Garibaldi massif rising behind under an alpenglow sky." preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#3b2c4b"/>
+        <stop offset="0.42" stop-color="#7c5a83"/>
+        <stop offset="0.72" stop-color="#c98a97"/>
+        <stop offset="1" stop-color="#ecd9c8"/>
+      </linearGradient>
+      <linearGradient id="lakefill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e9dfe6"/>
+        <stop offset="1" stop-color="#b8a6c4"/>
+      </linearGradient>
+      <linearGradient id="meadow1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8a6b93"/>
+        <stop offset="1" stop-color="#6d4f80"/>
+      </linearGradient>
+      <linearGradient id="meadow2" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5f4470"/>
+        <stop offset="1" stop-color="#503a61"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="1440" height="560" fill="url(#sky)"/>
+    <!-- faint stars in the high sky -->
+    <g fill="#f5f2f8" opacity="0.55">
+      <circle cx="150" cy="52" r="1.4"/><circle cx="320" cy="34" r="1.1"/><circle cx="540" cy="66" r="1.3"/>
+      <circle cx="905" cy="40" r="1.2"/><circle cx="1180" cy="58" r="1.4"/><circle cx="1330" cy="30" r="1"/>
+      <circle cx="720" cy="26" r="1.1"/><circle cx="70" cy="96" r="1"/>
+    </g>
+
+    <!-- far Tantalus range, sunset side (left, hazy) -->
+    <path d="M0 258 L58 236 L96 246 L142 214 L188 240 L232 222 L268 244 L310 230 L348 252 L390 258 L390 560 L0 560 Z" fill="#69537e" opacity="0.55"/>
+    <path d="M96 246 L142 214 L162 228 L150 236 L138 226 L120 244 Z" fill="#efe9f2" opacity="0.5"/>
+    <path d="M232 222 L252 234 L244 240 L236 230 Z" fill="#efe9f2" opacity="0.45"/>
+
+    <!-- Garibaldi massif: broad glaciated hump + sharp Atwell pyramid -->
+    <path d="M640 560 L640 300 L730 236 L820 200 L905 172 L965 120 L1030 176 L1105 214 L1190 258 L1280 300 L1440 342 L1440 560 Z" fill="#241c2b"/>
+    <!-- Atwell pyramid highlight edge -->
+    <path d="M965 120 L1030 176 L1105 214 L1075 214 L1010 178 L965 132 Z" fill="#3b2c4b"/>
+    <!-- glacier / snowfields -->
+    <path d="M905 172 L965 120 L1010 178 L988 190 L996 214 L962 196 L940 224 L928 190 L898 200 Z" fill="#f5f2f8"/>
+    <path d="M820 200 L868 216 L846 238 L872 252 L830 250 L806 232 Z" fill="#f5f2f8" opacity="0.9"/>
+    <path d="M1105 214 L1150 240 L1128 252 L1102 236 Z" fill="#f5f2f8" opacity="0.75"/>
+    <path d="M730 236 L768 250 L748 266 L722 254 Z" fill="#f5f2f8" opacity="0.6"/>
+    <!-- crevasse strokes -->
+    <g stroke="#b8a6c4" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.7">
+      <path d="M930 196 C944 190 958 186 972 186"/>
+      <path d="M918 214 C936 206 956 202 974 204"/>
+      <path d="M836 226 C850 222 862 222 872 226"/>
+    </g>
+
+    <!-- middle dark ridge (Diamond Head shoulder) -->
+    <path d="M0 372 L120 344 L260 356 L420 322 L560 344 L700 320 L860 348 L1020 332 L1200 360 L1440 340 L1440 560 L0 560 Z" fill="#16111a"/>
+    <!-- lingering snow patches on the ridge -->
+    <path d="M430 330 L470 336 L452 346 L426 340 Z" fill="#dfe3ef" opacity="0.55"/>
+    <path d="M700 326 L738 332 L716 342 L692 336 Z" fill="#dfe3ef" opacity="0.5"/>
+    <path d="M1024 338 L1058 342 L1040 352 L1016 346 Z" fill="#dfe3ef" opacity="0.45"/>
+
+    <!-- rolling heather meadow, upper roll -->
+    <path d="M0 448 C160 408 300 424 460 412 C620 400 760 428 920 416 C1080 404 1240 428 1440 412 L1440 560 L0 560 Z" fill="url(#meadow1)"/>
+
+    <!-- the two lakes, nestled in the meadow saddle -->
+    <ellipse cx="620" cy="470" rx="118" ry="26" fill="url(#lakefill)"/>
+    <ellipse cx="852" cy="486" rx="86" ry="20" fill="url(#lakefill)"/>
+    <!-- lake shore strokes -->
+    <g stroke="#3b2c4b" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5">
+      <path d="M508 466 C560 452 690 452 730 468"/>
+      <path d="M770 483 C812 472 900 472 936 486"/>
+    </g>
+    <!-- reflections -->
+    <g stroke="#f5f2f8" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.65">
+      <path d="M560 472 q16 -3 32 0"/><path d="M640 478 q14 -3 28 0"/>
+      <path d="M828 488 q13 -3 26 0"/><path d="M876 492 q10 -2 20 0"/>
+    </g>
+
+    <!-- the hut: small gable with a stovepipe, on the rise between the lakes -->
+    <g>
+      <rect x="726" y="442" width="30" height="16" fill="#2a2130"/>
+      <path d="M722 442 L741 428 L760 442 Z" fill="#7d3b3f"/>
+      <rect x="744" y="431" width="3.4" height="8" fill="#16111a"/>
+      <rect x="733" y="447" width="6" height="8" fill="#c98a97" opacity="0.9"/>
+      <rect x="746" y="447" width="5" height="5" fill="#c98a97" opacity="0.7"/>
+    </g>
+
+    <!-- foreground heather roll -->
+    <path d="M0 520 C220 484 420 502 640 492 C880 480 1120 508 1440 488 L1440 560 L0 560 Z" fill="url(#meadow2)"/>
+
+    <!-- heather clumps + krummholz, hand-drawn strokes -->
+    <g stroke="#a58cb4" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8">
+      <path d="M120 512 q4 -10 8 0 M128 514 q4 -9 8 0 M112 514 q4 -8 8 0"/>
+      <path d="M330 500 q4 -10 8 0 M338 502 q4 -9 8 0"/>
+      <path d="M980 502 q4 -10 8 0 M988 504 q4 -9 8 0 M972 504 q4 -8 8 0"/>
+      <path d="M1240 500 q4 -10 8 0 M1248 502 q4 -9 8 0"/>
+    </g>
+    <g fill="#c9b5d4" opacity="0.55">
+      <circle cx="200" cy="522" r="2"/><circle cx="214" cy="518" r="1.6"/><circle cx="420" cy="510" r="2"/>
+      <circle cx="560" cy="520" r="1.7"/><circle cx="760" cy="512" r="2"/><circle cx="1080" cy="516" r="1.8"/>
+      <circle cx="1180" cy="524" r="2"/><circle cx="1340" cy="510" r="1.7"/>
+    </g>
+    <!-- stunted subalpine firs -->
+    <g stroke="#16111a" stroke-width="2" fill="none" stroke-linecap="round">
+      <path d="M92 508 L92 480 M92 484 L84 492 M92 484 L100 492 M92 492 L82 502 M92 492 L102 502 M92 500 L80 512 M92 500 L104 512"/>
+      <path d="M1396 496 L1396 470 M1396 474 L1389 481 M1396 474 L1403 481 M1396 482 L1387 491 M1396 482 L1405 491 M1396 490 L1385 501 M1396 490 L1407 501"/>
+      <path d="M470 500 L470 478 M470 482 L464 488 M470 482 L476 488 M470 489 L462 497 M470 489 L478 497"/>
+    </g>
+    <!-- trail thread through the meadow -->
+    <path d="M40 556 C220 530 360 536 470 520 C560 508 540 486 620 496 C700 505 700 452 740 458" stroke="#ecd9c8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-dasharray="1 8" opacity="0.85"/>
+  </svg>
+</div>
+
+<!-- ===================== MASTHEAD ===================== -->
+<header class="mast">
+  <div class="wrap">
+    <div class="kicker">Sea to Sky Trails &middot; Vol.&nbsp;II, No.&nbsp;05</div>
+    <h1>Elfin Lakes</h1>
+    <p class="deck">Two small lakes on a heather ridge in the Diamond Head corner of Garibaldi Park &mdash; the corridor&rsquo;s classic hut hike, walked in summer and skied in winter, and better in both than the photos suggest.</p>
+  </div>
+</header>
+
+<!-- ===================== COORDINATE RIBBON ===================== -->
+<div class="ribbon" role="doc-pullquote" aria-label="Trail facts at a glance">
+  <div class="inner">
+    <div class="cell"><span class="k">Elevation</span><span class="v">&asymp;1,480 m</span></div>
+    <div class="cell"><span class="k">Distance</span><span class="v">22 km return</span></div>
+    <div class="cell"><span class="k">Gain</span><span class="v">&asymp;600 m</span></div>
+    <div class="cell"><span class="k">Position</span><span class="v">49.75&deg; N &middot; 123.01&deg; W</span></div>
+    <div class="cell"><span class="k">Park</span><span class="v">Garibaldi Provincial</span></div>
+    <div class="cell"><span class="k">Territory</span><span class="v">Sḵwx̱wú7mesh Úxwumixw</span></div>
+  </div>
+</div>
+
+<!-- ===================== ESSAY ===================== -->
+<section class="essay" id="essay">
+  <div class="narrow">
+    <div class="eyebrow">The Walk In</div>
+    <p class="opener">Every mountain town has one trail that everyone has done, and above Squamish that trail is Elfin. It leaves the Diamond Head parking lot on an old road grade &mdash; wide, steady, almost polite &mdash; and climbs through big timber to Red Heather Meadows, where a small day shelter marks the point the forest gives up. From there the grade rolls along an open ridge for the better part of an hour: heather on both sides, Atwell Peak&rsquo;s black pyramid filling the skyline ahead, and, on a clear evening, the whole Tantalus Range catching the light across the valley. Then the trail drops a bend and the two lakes appear below you, exactly where the name promised they&rsquo;d be.</p>
+    <p>On paper it sounds like a slog &mdash; roughly eleven kilometres each way, on the order of six hundred metres of climbing. In practice the road grade does something unusual: it makes twenty-two kilometres feel moderate. There&rsquo;s no scrambling, no rooty staircase, no exposure. Just distance. Fit hikers jog it, families string it out over a full day, and because the grade was built as a road, mountain bikes are allowed as far as Elfin &mdash; a two-hour climb and a twenty-minute descent that locals treat as a workout with a view (bike rules can shift, so check the current BC Parks page before rolling up).</p>
+    <p>What the distance buys you is the setting. The lakes sit in a saddle of rolling heather with volcanic rock underfoot and glaciated volcano overhead &mdash; a combination that exists almost nowhere else within an hour of a highway. In late summer the meadows go purple. In October the bears come through to work them. In winter the whole ridge disappears under metres of snow and turns into something else entirely, which is why this guide has two halves.</p>
+
+    <div class="pull">
+      &ldquo;You walk uphill on an old road for three hours and arrive somewhere with bunks, a kettle shelf, and two lakes told apart by which one you&rsquo;re allowed to swim in.&rdquo;
+      <span class="who">Field notes, August</span>
+    </div>
+
+    <p>A word on the name, because first-timers ask: there are two lakes, they are small, and neither is the point on its own. The point is the ridge they sit on &mdash; the long heather shoulder with Atwell and Mount Garibaldi stacked behind it, and sunset falling on the Tantalus across the valley. People carry camp chairs eleven kilometres for that hour of light. Having watched it, we can&rsquo;t call them wrong.</p>
+  </div>
+</section>
+
+<!-- ===================== QUICK TAKE ===================== -->
+<section class="quick" id="quick">
+  <div class="wrap">
+    <div class="quick-grid">
+      <div>
+        <div class="eyebrow">Quick Take</div>
+        <h2>The numbers, then the fine print.</h2>
+        <div class="figures" style="margin-top:1.8rem;">
+          <div><div class="num">22 km</div><div class="lbl">Round trip</div></div>
+          <div><div class="num">&asymp;600 m</div><div class="lbl">Elevation gain</div></div>
+          <div><div class="num">6&ndash;8 hr</div><div class="lbl">Typical day hike</div></div>
+          <div><div class="num">&asymp;33</div><div class="lbl">Bunks in the shelter</div></div>
+        </div>
+      </div>
+      <div>
+        <ul class="quick-notes">
+          <li><span class="n">i.</span><span><b>Long but moderate.</b> The whole route follows an old road grade via Red Heather Meadows. No technical ground in summer &mdash; the challenge is distance, not difficulty.</span></li>
+          <li><span class="n">ii.</span><span><b>The lot fills early.</b> The Diamond Head trailhead sits at the top of ~16 km of climbing gravel off Mamquam Road. On summer weekends, arrive at breakfast time or circle in vain.</span></li>
+          <li><span class="n">iii.</span><span><b>Reservation-only overnights.</b> The shelter and the tent platforms both book through BC Parks, year-round. Summer weekends and winter Saturdays vanish well ahead.</span></li>
+          <li><span class="n">iv.</span><span><b>Day-pass season.</b> Garibaldi&rsquo;s day-use pass requirement applies seasonally. Check BC Parks for current dates before you drive up.</span></li>
+          <li><span class="n">v.</span><span><b>No dogs.</b> Garibaldi Provincial Park doesn&rsquo;t allow them, anywhere, any season. Plan accordingly.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE ROAD ===================== -->
+<section class="block" id="road">
+  <div class="wrap">
+    <div class="split">
+      <div class="side">
+        <div class="eyebrow">Getting There</div>
+        <h2>Sixteen kilometres of gravel first.</h2>
+        <div class="side-note">
+          <strong>Field note &middot; the last pitch</strong>
+          The final stretch below the parking lot is the steep part. In shoulder season it holds snow and ice long after town is green &mdash; winter tires and clearance are the difference between parking at the trailhead and adding road-walk to an already long day.
+        </div>
+      </div>
+      <div>
+        <p>From downtown Squamish, follow Mamquam Road east as it leaves the neighbourhoods and starts to climb. The pavement gives way to roughly sixteen kilometres of gravel, gaining steadily through second-growth toward the Diamond Head trailhead. Most of it is ordinary logging-road driving &mdash; washboard, potholes, the occasional confident Corolla &mdash; but the grade steepens meaningfully near the top, and that&rsquo;s where low-clearance cars and summer tires earn their regrets. The road climbs out of the <a class="ln" href="https://mamquam.com/">Mamquam valley</a>, which is a destination in its own right and has its own guide.</p>
+        <p>Two practical notes. First, the lot: it fills early on every fair-weather weekend, summer and winter both, and there is no meaningful overflow. Second, the season: this road climbs high enough that conditions at the trailhead routinely lag town by a month. Check current road and park conditions with BC Parks before committing &mdash; especially October through June.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE HUT ===================== -->
+<section class="block" id="hut" style="padding-top:0;">
+  <div class="wrap">
+    <div class="split rev">
+      <div>
+        <p>The Elfin Lakes shelter is the reason this trail carries an overnight culture that most day hikes never develop. It&rsquo;s a proper hut &mdash; bunks for around thirty-three people, a communal main floor, and walls that have absorbed forty-odd years of drying gear and card games. It books through BC Parks, reservation-only, year-round, and it books out: summer weekends and winter Saturdays are typically claimed the moment they open. If you want bunks, plan like it&rsquo;s a ferry reservation, not a whim. Current fees and booking windows are on the BC Parks site.</p>
+        <p>Tent platforms sit near the hut for those who&rsquo;d rather sleep outside (also reservable), and the Red Heather day shelter partway up serves as the storm refuge and lunch stop &mdash; it&rsquo;s a warming hut, not an overnight option. If hut-based overnights are your thing, the sibling of this trip on the other side of town is <a class="ln" href="https://waterspritelake.com/">Watersprite Lake</a> &mdash; smaller hut, sharper cirque, same book-early reality.</p>
+      </div>
+      <div class="side">
+        <div class="eyebrow">The Hut</div>
+        <h2>Bunks for thirty-three, booked by the quick.</h2>
+        <div class="side-note">
+          <strong>Field note &middot; hut etiquette</strong>
+          Pack out everything, including food scraps &mdash; the meadows have bears and the hut has mice, and both are diligent. Earplugs are not optional equipment in a 33-bunk room.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LAKE RULES ===================== -->
+<section class="block" id="lakes" style="padding-top:1rem;">
+  <div class="wrap">
+    <div class="lakesign">
+      <div class="eyebrow" style="justify-content:center;">The Two Lakes</div>
+      <h3>One is for drinking. One is for swimming.</h3>
+      <p style="max-width:52ch;margin:0 auto;">The lakes sit a few steps apart and are governed by the oldest rule at Elfin: one is the camp&rsquo;s drinking-water source, the other is the one you&rsquo;re welcome to swim in. Signs at the lakes tell you which is which &mdash; read them, believe them.</p>
+      <div class="two">
+        <div>
+          <div class="tag drink">The drinking lake</div>
+          <p>Stay out of it. No swimming, no rinsing dishes, no dipping dogs (there are none anyway &mdash; see above). Everyone&rsquo;s tea depends on it.</p>
+        </div>
+        <div>
+          <div class="tag swim">The swimming lake</div>
+          <p>Snowmelt-fed and honestly cold, even in August. Glorious for about forty-five seconds, which is precisely enough.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TWO SEASONS SPLIT ===================== -->
+<section class="seasons2" id="seasons">
+  <div class="head">
+    <div class="eyebrow">One Ridge, Two Trips</div>
+    <h2>Elfin is two different places.<br>Pick your season honestly.</h2>
+  </div>
+  <div class="panels">
+
+    <div class="panel summer">
+      <svg class="mini" viewBox="0 0 74 46" aria-hidden="true">
+        <circle cx="58" cy="12" r="6" fill="none" stroke="#6d4f80" stroke-width="1.6"/>
+        <g stroke="#6d4f80" stroke-width="1.4" stroke-linecap="round"><path d="M58 2 L58 4.5 M68 12 L65.5 12 M65 5 L63.2 6.8 M65 19 L63.2 17.2"/></g>
+        <path d="M2 38 C14 30 28 34 40 30 C52 26 62 32 72 28" fill="none" stroke="#6d4f80" stroke-width="1.6" stroke-linecap="round"/>
+        <g stroke="#a58cb4" stroke-width="1.4" fill="none" stroke-linecap="round"><path d="M14 36 q3 -7 6 0"/><path d="M30 33 q3 -7 6 0"/><path d="M48 31 q3 -7 6 0"/></g>
+      </svg>
+      <div class="season-tag">Summer &middot; the walk</div>
+      <h3>July to October: heather, alpenglow, and a long easy grade.</h3>
+      <p>Snow-free hiking typically arrives in July and holds into October, with the meadows at full purple in August. The trail is a conversation-pace walk the whole way &mdash; the classic first overnight for new backpackers, the classic trail-run for locals, and a legitimate bike ride if the current rules allow it.</p>
+      <ul>
+        <li>Start early: for the parking lot first, for afternoon heat second.</li>
+        <li>Carry water between Red Heather and the lakes &mdash; the open ridge is dry and shadeless.</li>
+        <li>Fall is bear season in the meadows. Make noise, carry spray, give them the trail.</li>
+        <li>Day-use pass rules apply in season &mdash; confirm on BC Parks before driving up.</li>
+      </ul>
+    </div>
+
+    <div class="panel winter">
+      <svg class="mini" viewBox="0 0 74 46" aria-hidden="true">
+        <path d="M2 40 L20 18 L30 28 L44 8 L60 26 L72 20" fill="none" stroke="#a58cb4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <g stroke="#f5f2f8" stroke-width="1.3" stroke-linecap="round"><path d="M12 10 L12 16 M9 13 L15 13 M10.2 10.8 L13.8 15.2 M10.2 15.2 L13.8 10.8"/></g>
+        <path d="M30 40 C40 36 52 38 66 34" fill="none" stroke="#f5f2f8" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="1 4"/>
+      </svg>
+      <div class="season-tag">Winter &middot; the tour</div>
+      <h3>December to April: the corridor&rsquo;s classic first ski tour.</h3>
+      <p>Under snow, Elfin becomes the standard introductory overnight ski tour and splitboard trip in the Sea to Sky &mdash; a heated-hut objective with honest distance and a marked winter route that differs from the summer trail. It is beginner-friendly as ski touring goes. It is not beginner-friendly as walking goes: this is winter backcountry, full stop.</p>
+      <ul>
+        <li>Beyond Red Heather the terrain carries avalanche exposure. That&rsquo;s the line on the map to take seriously.</li>
+        <li>Transceiver, probe, shovel &mdash; and the training to use them. AST 1 is the sensible price of entry.</li>
+        <li>Travel with partners, check the avalanche forecast, and follow the marked winter route, not summer GPS tracks.</li>
+        <li>Whiteouts on the ridge are routine. Navigation is part of the trip, not a contingency.</li>
+      </ul>
+      <div class="avvy">
+        <strong>Not a warning label &mdash; the actual deal</strong>
+        People treat Elfin as &ldquo;the safe one,&rdquo; and relative to the corridor&rsquo;s other tours, it is. But rescues happen here in winter, usually to parties who brought summer assumptions. Training, gear, forecast, partner. All four, every time.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== WHEN TO GO ===================== -->
+<section class="when" id="when">
+  <div class="narrow">
+    <div class="eyebrow">When to Go</div>
+    <h2>A year at Elfin, month by honest month.</h2>
+    <div class="table-scroll">
+      <table class="months">
+        <thead><tr><th>Window</th><th>Conditions</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr><td class="m">Dec &ndash; Feb</td><td>Deep snowpack, marked winter route, hut nights at their coziest. Avalanche gear and training mandatory beyond Red Heather; short days.</td><td class="verdict">Ski tourers</td></tr>
+          <tr><td class="m">Mar &ndash; Apr</td><td>The prime touring window &mdash; longer days, settled snow more often. Still full winter protocol. Book bunks far ahead.</td><td class="verdict">Best winter</td></tr>
+          <tr><td class="m">May &ndash; Jun</td><td>The awkward season: rotten snow up high, hidden hazards, a road that may or may not cooperate. Check conditions; consider waiting.</td><td class="verdict">Patience</td></tr>
+          <tr><td class="m">Jul &ndash; Aug</td><td>Snow-free trail, meadows peaking purple, swimming lake at its least punishing. Also: the crowds and the full parking lot.</td><td class="verdict">Classic</td></tr>
+          <tr><td class="m">Sep</td><td>Our pick. Stable weather, thinner crowds, first colour in the meadows, alpenglow earlier in the evening.</td><td class="verdict">Best summer</td></tr>
+          <tr><td class="m">Oct &ndash; Nov</td><td>Bears working the meadows, first snows dusting Atwell, freeze-thaw on the road. Beautiful and moody; go equipped for both seasons at once.</td><td class="verdict">Shoulder</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HONEST NOTE ===================== -->
+<section class="honest">
+  <div class="narrow">
+    <div class="eyebrow">Honest Note</div>
+    <h2>What the brochures leave out.</h2>
+    <p style="margin-top:1.6rem;"><em>Twenty-two kilometres is twenty-two kilometres.</em> The moderate grade seduces people into underestimating the day; the trail out feels twice as long as the trail in, every time, for everyone. Bring more food than a &ldquo;moderate hike&rdquo; suggests, and headlamps whether or not you plan to need them.</p>
+    <p>The ridge between Red Heather and the lakes is gorgeous and exposed &mdash; to sun in August, to weather the rest of the year. When cloud sits on Diamond Head, the famous views are simply gone, and more than one party has walked eleven kilometres to photograph the inside of a marble. Check the forecast with your hopes switched off.</p>
+    <p>And the hut is a shared bunkhouse, not a cabin rental. It&rsquo;s sociable, warm, occasionally loud, and entirely dependent on everyone packing out their own mess. The place runs on the honour system, and it shows &mdash; in both directions. This is Sḵwx̱wú7mesh Úxwumixw territory; walk it like a guest, because you are one.</p>
+  </div>
+</section>
+
+<!-- ===================== TRAILHEAD SUPPORT ===================== -->
+<section class="support" id="support">
+  <div class="wrap">
+    <div class="eyebrow">Trailhead Support</div>
+    <h2>This one&rsquo;s a hike, not a paddle.</h2>
+    <p style="max-width:62ch;margin-top:1rem;">No boats at 1,480 metres &mdash; Elfin earns its views on foot. But if you&rsquo;re staging a hut trip out of Squamish, a couple of local services take the friction out of the logistics.</p>
+
+    <div class="support-grid">
+      <div class="support-card">
+        <h3>Gear, delivered in Squamish</h3>
+        <p>Overnight kit you&rsquo;d rather not fly with &mdash; camping and outdoor gear from local owners, dropped where you&rsquo;re staying. Handy when the hut booking came through before the packing list did.</p>
+        <a class="cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Browse rentals</a>
+      </div>
+      <div class="support-card">
+        <h3>Local guides &amp; trip help</h3>
+        <p>First hut trip, first winter tour, or just want the beta from someone who was up there last weekend &mdash; local operators and guides list through the same marketplace.</p>
+        <a class="cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Find a local</a>
+      </div>
+    </div>
+
+    <div class="rest-day">
+      <strong>The day after</strong>
+      Here&rsquo;s the move the guidebooks miss: the day after Elfin, your legs want flat and your morning wants slow. Squamish&rsquo;s estuary delivers exactly that &mdash; glassy channels, eagles, Howe Sound around the corner, and about the gentlest water sports the town offers. <a class="ln" href="https://squamishcanoerental.com/">Rent a canoe on the estuary</a> (they seat up to three), drift for a couple of hours, and let the quads file their grievances in peace.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="narrow">
+    <div class="eyebrow">Questions &amp; Answers</div>
+    <h2>What people actually ask about Elfin Lakes.</h2>
+
+    <div class="faq-list">
+
+      <details class="qa">
+        <summary>How long is the Elfin Lakes hike?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>About 11 km each way &mdash; 22 km round trip &mdash; from the Diamond Head trailhead, with on the order of 600 m of elevation gain. Because the route follows an old road grade through Red Heather Meadows, it&rsquo;s long rather than steep: most day hikers take 6&ndash;8 hours return, trail runners much less, and overnighters split it with a night at the hut or tent platforms.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Is Elfin Lakes hard? Can beginners do it?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>In summer, it&rsquo;s one of the most beginner-friendly alpine trips in the corridor &mdash; moderate grade, no technical terrain, a day shelter partway. The catch is pure distance: 22 km is a real day, and the return leg is where unprepared parties suffer. In winter it is a different question entirely; see below.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Do I need a reservation to stay at the Elfin Lakes shelter?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Yes. The shelter &mdash; bunks for roughly 33 people &mdash; is reservation-only through BC Parks, year-round, as are the tent platforms beside it. Popular dates book out well in advance, especially summer weekends and winter Saturdays. Current fees, booking windows, and rules are on the BC Parks website; the Red Heather shelter en route is a day-use warming hut only.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Which lake can you swim in at Elfin Lakes?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>One of the two lakes is the designated drinking-water source and is off-limits for swimming and washing; the other is the swimming lake. Signs posted at the lakes tell you which is which &mdash; check them on arrival rather than trusting the internet, and respect the split. Fair warning: the swimming lake is snowmelt-fed and cold all season.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can I mountain bike to Elfin Lakes?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Historically yes &mdash; bikes have been allowed on the road grade as far as Elfin Lakes, and the descent is a local favourite. Park rules can change, though, so check the current BC Parks page for Garibaldi before you commit to riding. Beyond the lakes, bikes don&rsquo;t belong on the hiking trails.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can you ski or snowshoe to Elfin Lakes in winter?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Yes &mdash; it&rsquo;s the classic introductory overnight ski tour and splitboard trip in the Sea to Sky, and snowshoers do it too. But the terrain beyond Red Heather carries avalanche exposure, and the marked winter route differs from the summer trail. Carry transceiver, probe, and shovel; get avalanche training (AST 1 at minimum); travel with partners; and check the avalanche forecast. &ldquo;Beginner tour&rdquo; means beginner <em>for ski touring</em>, not a walk.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Do I need a day pass, and are dogs allowed?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Garibaldi Provincial Park&rsquo;s day-use pass requirement applies seasonally &mdash; check BC Parks for the current dates and how to book before you drive up. Dogs are not permitted anywhere in Garibaldi Park, in any season, including at Red Heather and the hut. This one is enforced and worth respecting; the meadows are active wildlife habitat, with bears working them in fall.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>What&rsquo;s the road to the Diamond Head trailhead like?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>From Squamish, Mamquam Road turns to gravel and climbs about 16 km to the trailhead, steepening near the top. Most vehicles manage it in dry summer conditions, but clearance helps, and in shoulder season and winter the upper road holds snow and ice &mdash; winter tires are essential and the final pitch is the crux. The lot fills early on fair-weather weekends year-round. Check current road conditions with BC Parks before you go.</p>
+          <p>More from this shelf of the range: <a class="ln" href="https://waterspritelake.com/">Watersprite Lake</a>, the other hut hike east of town; the <a class="ln" href="https://mamquam.com/">Mamquam valley</a> the access road climbs out of; and <a class="ln" href="https://alicelakesquamish.com/">Alice Lake</a> for the easy day after.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="colophon">
+  <div class="wrap">
+    <div class="col-grid">
+      <div>
+        <h4>This Guide</h4>
+        <p>Elfin Lakes is entry No. 05 in Volume II of the <a class="ln" href="https://seatoskytrails.com/">Sea to Sky Trails</a> &mdash; a slow-built field guide to the lakes, ridges, and huts of the Coast Mountains, written by people who keep going back.</p>
+      </div>
+      <div>
+        <h4>More Field Guides</h4>
+        <ul>
+          <li><a href="https://waterspritelake.com/">Watersprite Lake</a></li>
+          <li><a href="https://mamquam.com/">Mamquam Valley</a></li>
+          <li><a href="https://alicelakesquamish.com/">Alice Lake</a></li>
+          <li><a href="https://lakelovelywater.com/">Lake Lovely Water</a></li>
+          <li><a href="https://callaghanlake.com/">Callaghan Lake</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Squamish Logistics</h4>
+        <ul>
+          <li><a href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear rentals &amp; local guides</a></li>
+          <li><a href="https://squamishcanoerental.com/">Canoe rental on the estuary</a></li>
+          <li><a href="https://squamishwatertaxi.com/tours.html">Howe Sound boat tours</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-bottom">
+      <div><em>Sea to Sky Trails</em> &middot; Vol.&nbsp;II, No.&nbsp;05 &middot; <a href="https://seatoskytrails.com/">seatoskytrails.com</a></div>
+      <div>Published with respect in the territory of the Sḵwx̱wú7mesh Úxwumixw (Squamish Nation).</div>
+      <div>Set in Fraunces &amp; Inter. Reader-funded.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STRUCTURED DATA ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Elfin Lakes",
+  "alternateName": "Elfin Lakes, Diamond Head, Garibaldi Provincial Park",
+  "description": "Two small alpine lakes on a heather ridge in the Diamond Head (southern) area of Garibaldi Provincial Park above Squamish, BC. Reached by an 11 km (one-way) trail on an old road grade via Red Heather Meadows, with a reservation-only 33-bunk shelter and tent platforms. A classic summer hut hike and the corridor's classic introductory winter ski tour.",
+  "url": "https://elfin-lake.com/",
+  "isAccessibleForFree": false,
+  "publicAccess": true,
+  "touristType": ["Hikers", "Backpackers", "Ski tourers", "Trail runners"],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.75,
+    "longitude": -123.01,
+    "elevation": "1480 m"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Squamish",
+    "addressRegion": "BC",
+    "addressCountry": "CA"
+  },
+  "containedInPlace": {
+    "@type": "Park",
+    "name": "Garibaldi Provincial Park"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the Elfin Lakes hike?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 11 km each way (22 km round trip) from the Diamond Head trailhead, with on the order of 600 m of elevation gain. The route follows an old road grade through Red Heather Meadows, so it is long rather than steep. Most day hikers take 6-8 hours return; overnighters split it with a night at the hut or tent platforms." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Elfin Lakes hard? Can beginners do it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In summer it is one of the most beginner-friendly alpine trips in the Sea to Sky corridor: moderate grade, no technical terrain, and a day shelter partway. The main challenge is the 22 km distance. In winter it is a genuine backcountry ski tour with avalanche exposure beyond Red Heather and requires training and equipment." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a reservation to stay at the Elfin Lakes shelter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The shelter, with bunks for roughly 33 people, is reservation-only through BC Parks year-round, as are the adjacent tent platforms. Popular dates book out well in advance. Current fees and booking windows are on the BC Parks website. The Red Heather shelter en route is a day-use warming hut only." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which lake can you swim in at Elfin Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "One of the two lakes is the designated drinking-water source and is off-limits for swimming and washing; the other is the swimming lake. Signs posted at the lakes indicate which is which - check them on arrival and respect the split. The swimming lake is snowmelt-fed and cold all season." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I mountain bike to Elfin Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bikes have historically been allowed on the road grade as far as Elfin Lakes, and the descent is a local favourite. Park rules can change, so check the current BC Parks page for Garibaldi Provincial Park before riding. Beyond the lakes, bikes are not permitted on the hiking trails." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you ski or snowshoe to Elfin Lakes in winter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - it is the classic introductory overnight ski tour and splitboard trip in the Sea to Sky, and snowshoers do it too. But terrain beyond Red Heather carries avalanche exposure and the marked winter route differs from the summer trail. Carry transceiver, probe and shovel, get avalanche training (AST 1 at minimum), travel with partners, and check the avalanche forecast." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a day pass for Elfin Lakes, and are dogs allowed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Garibaldi Provincial Park's day-use pass requirement applies seasonally - check BC Parks for current dates before you go. Dogs are not permitted anywhere in Garibaldi Park in any season, including Red Heather and the hut. The meadows are active wildlife habitat, with bears in fall." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the road to the Diamond Head trailhead like?",
+      "acceptedAnswer": { "@type": "Answer", "text": "From Squamish, Mamquam Road turns to gravel and climbs about 16 km to the Diamond Head trailhead, steepening near the top. Clearance helps, and in shoulder season and winter the upper road holds snow and ice, so winter tires are essential. The parking lot fills early on fair-weather weekends year-round. Check current road conditions with BC Parks." }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
